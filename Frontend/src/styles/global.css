@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Font */
+body {
+  font-family: Audrey;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-black tracking-wide;
+}
+
+/* Chatbot Styles */
+.chatbot {
+  @apply bg-white p-4 border rounded-md shadow-lg max-w-lg mx-auto mt-4;
+}
+
+.chatbox {
+  @apply max-h-60 overflow-y-auto border-b pb-2 mb-2;
+}
+
+.chat-input {
+  @apply w-full p-2 border rounded-md mt-2;
+}
+
+/* Button Styles */
+.btn {
+  @apply bg-yellow-400 text-black font-bold py-2 px-4 rounded-lg hover:bg-yellow-500 transition duration-300;
+}
+
+
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+.custom-cursor {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.interactive-element {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.interactive-element:hover {
+  background-color: #ccc;
+}
+
+/* Disable default hand cursor on interactive elements */
+a, button, [role="button"], .interactive {
+  cursor: none; /* Hides the browser's default pointer */
+}
+
